@@ -1,8 +1,8 @@
 class Mercenary
 {
-	private:
-		int power;
-		int durability;
-		int distance;
-		int cost;
+	public:	
+		void *character;
+		const char* type;
+		
+		Mercenary(void *c, const char *t) : character(c), type(t) {}	
 };
