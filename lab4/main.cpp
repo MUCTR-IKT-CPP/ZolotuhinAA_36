@@ -1,21 +1,48 @@
 #include <iostream>
 
-class Warrior
+class Mage 
 {
 	private:
 		int power;
+		int durability;
+		int distance;
+		int cost;
+};
+
+class Shooter 
+{
+	private:
+		int power;
+		int durability;
+		int distance;
+		int cost;
+};
+
+class Mercenary
+{
+	private:
+		int power;
+		int durability;
+		int distance;
+		int cost;
+};
+
+class Guild
+{
+	private:
+		int power;
+		int durability;
+		int distance;
+		int cost;
 	
 	public:
-		Warrior(int p) : power(p) { }
-
-		void show()
-			{ std::cout << power; } 
+		void show_list()
+		{
+		}
 };
 
 int main()
 {
-	Warrior w1(5);
-	w1.show();
 
 	return 0;
 }
