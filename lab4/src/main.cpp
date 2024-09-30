@@ -23,7 +23,7 @@ int main()
 	int character_1 = 1;
 	int character_2 = 2;
 	
-	guild.set_mercenary(&character_1, "Warrior");
+	guild.set_mercenary(&character_1, 1);
 	guild.get_mercenary_list();
 
 	return 0;
