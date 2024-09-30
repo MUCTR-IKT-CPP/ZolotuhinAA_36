@@ -12,9 +12,19 @@
 
 #include <iostream>
 
+#include "../include/Guild.h"
+
 int main()
 {
+	srand(time(nullptr));
+	
+	Guild guild(2);
+	
+	int character_1 = 1;
+	int character_2 = 2;
+	
+	guild.set_mercenary(&character_1, "Warrior");
+	guild.get_mercenary_list();
 
 	return 0;
 }
-	
