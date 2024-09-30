@@ -1,6 +1,3 @@
-#include "Swordsman.h"
-#include "Mage.h"
-#include "Shooter.h"
 #include "Mercenary.h"
 
 class Guild
@@ -9,6 +6,7 @@ class Guild
 		Mercenary **mercenaries;	
 		int size;
 		int capacity;
+
 	public:
 		Guild(int c) : size(0), capacity(c)
 			{ mercenaries = new Mercenary*[capacity]; }
@@ -21,7 +19,7 @@ class Guild
 			delete [] mercenaries;
 		}
 
-		void set_mercenary(void *character, const char *type)
+		void set_mercenary(void *character, int type)
 		{
 			if (size >= capacity)
 			{
