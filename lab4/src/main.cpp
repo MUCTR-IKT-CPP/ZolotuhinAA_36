@@ -19,8 +19,7 @@ int main()
 	srand(time(nullptr));
 		
 	Guild guild(Constants::capacity);
-	int character = 1;
-	guild.set_mercenary(&character, 1);	
+	
 	int *characters = new int[Constants::capacity];
 	for (int i = 0; i < Constants::capacity; i++)
 		guild.set_mercenary(&characters[i], rand() % 3);
