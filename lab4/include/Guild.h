@@ -36,10 +36,15 @@ class Guild
 			mercenaries[size++] = new Mercenary(character, type);
 		}
 
+		/*void set_mercenary_random()
+		{
+			set_mercenary(
+		}*/
+
 		void get_mercenary_list()
 		{
-			std::cout << "Список наемников:" << std::endl;
+			std::cout << std::endl << "\tСписок наемников:" << std::endl;
 			for (int i = 0; i < size; i++)
-				std::cout << "Тип: " << mercenaries[i]->type << std::endl;
+				mercenaries[i]->Mercenary::get_mercenary_characteristic();
 		}
 };

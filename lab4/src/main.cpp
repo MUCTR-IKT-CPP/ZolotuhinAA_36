@@ -17,14 +17,17 @@
 int main()
 {
 	srand(time(nullptr));
-	
-	Guild guild(2);
-	
-	int character_1 = 1;
-	int character_2 = 2;
-	
-	guild.set_mercenary(&character_1, 1);
+		
+	Guild guild(Constants::capacity);
+	int character = 1;
+	guild.set_mercenary(&character, 1);	
+	int *characters = new int[Constants::capacity];
+	for (int i = 0; i < Constants::capacity; i++)
+		guild.set_mercenary(&characters[i], rand() % 3);
+
 	guild.get_mercenary_list();
+
+	delete [] characters;
 
 	return 0;
 }
