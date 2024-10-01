@@ -23,4 +23,12 @@ class Swordsman
 			std::cout << "\t\t\tДистанция - " << distance << ";" << std::endl;
 			std::cout << "\t\t\tСтоимость - " << cost << ";" << std::endl;
 		}
+
+		int get_power(void) { return this->power; }
+
+		int get_durability(void) { return this->durability; }
+
+		int get_distance(void) { return this->distance; }
+
+		int get_cost(void) { return this->cost; }
 };

@@ -18,15 +18,12 @@ int main()
 {
 	srand(time(nullptr));
 		
-	Guild guild(Constants::capacity);
+	Guild guild;
 	
-	int *characters = new int[Constants::capacity];
-	for (int i = 0; i < Constants::capacity; i++)
-		guild.set_mercenary(&characters[i], rand() % 3);
+	guild.get_random_mercenaries();
 
-	guild.get_mercenary_list();
-
-	delete [] characters;
-
+	guild.get_show_mercenaries();
+	guild.set_group();	
+	guild.get_ideal_group(1000);
 	return 0;
 }
