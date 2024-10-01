@@ -21,9 +21,9 @@ int main()
 	Guild guild;
 	
 	guild.get_random_mercenaries();
-
 	guild.get_show_mercenaries();
 	guild.set_group();	
-	guild.get_ideal_group(1000);
+	guild.get_ideal_group();
+
 	return 0;
 }
